@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// Функція для обчислення коренів квадратного рівняння
 void solve_quadratic(double a, double b, double c) {
     double D = b * b - 4 * a * c;
     if (D > 0) {
@@ -18,7 +17,6 @@ void solve_quadratic(double a, double b, double c) {
     }
 }
 
-// Функція для обчислення коренів кубічного рівняння
 void solve_cubic(double a, double b, double c, double d) {
     if (a == 0) {
         printf("Це не кубічне рівняння!\n");
