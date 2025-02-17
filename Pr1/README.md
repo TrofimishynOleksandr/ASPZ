@@ -1,36 +1,36 @@
-# Solving quadratic and cubic equations on C
+# Розв'язання квадратних і кубічних рівнянь
 
-## Description
+## Опис
 
-This C program is designed to calculate the roots of quadratic and cubic equations, taking into account all possible cases:
+Ця програма на C призначена для обчислення коренів квадратних і кубічних рівнянь з урахуванням усіх можливих випадків:
 
-- Two real roots
+- Два дійсних корені
 
-- One real root
+- Один дійсний корінь
 
-- Complex roots (for a quadratic equation)
+- Комплексні корені (для квадратного рівняння)
 
-- Three real roots (for a cubic equation)
+- Три дійсних корені (для кубічного рівняння)
 
-## Requirements
+## Вимоги
 
-A C compiler (such as GCC).
+Компілятор C (наприклад, GCC).
 
-## Compilation
+## Компіляція
 
-The program is compiled using GCC.
-You need to add the ```-lm``` flag to include the math library.
+Програма скомпільована за допомогою GCC.
+Щоб включити математичну бібліотеку, потрібно додати прапорець ```-lm```.
 ```
 gcc -Wall task1.c -o task1 -lm
 ```
-## Execution
+## Запуск
 
 ```
 ./task1
 ```
-## Usage
+## Використання
 
-After executing, the program will prompt you to select the equation type:
+Після запуску програма запропонує вибрати тип рівняння:
 
 ```
 Оберіть тип рівняння:
@@ -39,38 +39,38 @@ After executing, the program will prompt you to select the equation type:
 Вибір:
 ```
 
-Enter ```1``` for a quadratic equation or ```2``` for a cubic equation, then enter the coefficients of the equation.
+Введіть ```1``` для квадратного рівняння або ```2``` для кубічного, а потім введіть коефіцієнти рівняння.
 
-### Input and output examples
-#### Example 1: Quadratic equation with two roots
-#### Input data:
+### Приклади введення і виведення
+#### Приклад 1: Квадратне рівняння з двома коренями
+#### Вхідні дані:
 ```
 1
 1 -3 2
 ```
-#### Output data:
+#### Вивід:
 ```
 Два дійсних корені: x1 = 2.00, x2 = 1.00
 ```
-#### Example 2: Quadratic equation with complex roots
-#### Input data:
+#### Приклад 2: Квадратне рівняння з комплексними коренями
+#### Вхідні дані:
 ```
 1
 1 1 1
 ```
-#### Output data:
+#### Вивід:
 ```
 Комплексні корені: x1 = -0.50 + 0.87i, x2 = -0.50 - 0.87i
 ```
-#### Example 3: Cubic equation with three real roots
-#### Input data:
+#### Приклад 3: Кубічне рівняння з трьома дійсними коренями
+#### Вхідні дані:
 ```
 2
 1 -6 11 -6
 ```
-#### Output data:
+#### Вивід:
 ```
 Три дійсних корені: x1 = 3.00, x2 = 2.00, x3 = 1.00
 ```
-## Dependencies
-The program uses the ```math.h``` library, so you need to add ```-lm``` when compiling.
+## Залежності
+Програма використовує бібліотеку ```math.h```, тому необхідно додати ```-lm``` при компіляції.
